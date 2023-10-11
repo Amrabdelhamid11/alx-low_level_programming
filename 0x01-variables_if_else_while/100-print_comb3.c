@@ -6,16 +6,19 @@
  * Description : print
  * --------------------------
  */
-int main(void)
+int main()
 {
-int firstDigit, secondDigit;
-for (firstDigit = 0; firstDigit <= 8; firstDigit++)
+int firstDigit, secondDigit, thirdDigit ;
+for (firstDigit = 0; firstDigit <= 7; firstDigit++)
 {
-for (secondDigit = firstDigit + 1; secondDigit <= 9; secondDigit++)
+for (secondDigit = firstDigit + 1; secondDigit <= 8; secondDigit++)
+{
+for (thirdDigit = secondDigit + 1; thirdDigit <= 9; thirdDigit++)
 {
 putchar(firstDigit + '0');
 putchar(secondDigit + '0');
-if (firstDigit == 8 && secondDigit == 9)
+putchar(thirdDigit + '0');
+if (firstDigit == 7 && secondDigit == 8 && thirdDigit==9)
 {
 break;
 }
@@ -23,6 +26,7 @@ putchar(',');
 putchar(' ');
 }
 }
+}
 putchar('\n');
-return (0);
+return(0);
 }
