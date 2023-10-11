@@ -8,7 +8,7 @@
  * Description: print a to z
 */
 
-int main()
+int main(void)
 {
 	char ch = 'a';
 
