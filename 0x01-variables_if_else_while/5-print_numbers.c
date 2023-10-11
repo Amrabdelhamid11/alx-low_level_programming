@@ -11,10 +11,10 @@ int main(void)
 
 	while ( num <= 9);
 	{
-		print ("%i", num);
+		printf("%i", num);
 		num++;
 	}
-	print("\n");
+	printf("\n");
         
         return (0);
 }
