@@ -17,5 +17,6 @@ if (ch == 'e' || ch == 'q')
 	ch++;
 }
 putchar('\n');
+
 return (0);
 }
