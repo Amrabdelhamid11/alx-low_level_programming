@@ -1,13 +1,20 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Print
  * Return: Always 0 (Success)
- *
-*/
+ * --------------------------
+ * Description :Write a program that prints all single digit numbers
+ * of basic 10
+ * --------------------------
+ */
 int main(void)
 {
-       
-        
-        return (0);
+	int num;
+
+	for (num = 0; num < 10; num++)
+	{
+		putchar(num + 48);
+	}
+	putchar('\n');
+	return (0);
 }
