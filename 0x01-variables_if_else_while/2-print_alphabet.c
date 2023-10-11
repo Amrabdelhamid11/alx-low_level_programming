@@ -8,14 +8,14 @@
  * Description: print a to z
 */
 
-int main(void)
+int main()
 {
 	char ch = 'a';
 
 	while (ch  <= 'z')
 	{
-		putchar(char);
-		chart++;
+		putchar(ch);
+		ch++;
 	}
 	putchar('\n');
 
