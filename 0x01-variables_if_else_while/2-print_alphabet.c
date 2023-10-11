@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	char chart = 'a';
+	char ch = 'a';
 
-	while (chart <= 'z')
+	while (ch  <= 'z')
 	{
 		putchar(char);
 		chart++;
