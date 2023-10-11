@@ -9,7 +9,7 @@ int main(void)
 {
 	int num = 0;
 
-	while ( i >= 9);
+	while ( num >= 9);
 	{
 		print ("%i", num);
 		num++;
