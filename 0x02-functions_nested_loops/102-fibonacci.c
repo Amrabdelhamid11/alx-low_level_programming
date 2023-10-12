@@ -13,6 +13,7 @@ int main(void)
 {
 	int i;
 	int n = 50;
+
 	unsigned long int a = 1, b = 2;
 
 	printf("%lu, %lu", a, b);
@@ -20,6 +21,7 @@ int main(void)
 	for (i = 2; i < n; i++)
 	{
 		unsigned long int next = a + b;
+
 		printf(", %lu", next);
 		a = b;
 		b = next;
