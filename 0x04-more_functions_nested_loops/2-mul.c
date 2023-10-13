@@ -7,7 +7,11 @@
  *@b : second integer
  * return: return results
 */
-int mul(int a, int b)
+int mul(int firstNumber, int secondNumber)
 {
-return (a * b);
+	int result;
+
+	result = (firstNumber * secondNumber);
+
+	return (result);
 }
