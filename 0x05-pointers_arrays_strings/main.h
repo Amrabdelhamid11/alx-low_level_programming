@@ -5,6 +5,9 @@
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
+void swap_int(int *firstInt, int *secondInt);
+int _strlen(char *string);
+void _puts(char *string);
 void reset_to_98(int *number);
 void swap_int(int *firstInt, int *secondInt);
 int _strlen(char *string);

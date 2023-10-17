@@ -4,22 +4,24 @@
 /**
  * _puts - Write a function that prints a string,
  * followed by a new line, to stdout.
- * @s: The given string to be printed.
+ * @string: The given string to be printed.
  * --------------------------
  * Write a function that prints a string,
  * followed by a new line, to stdout.
+
  */
-void _puts(char *s)
+void _puts(char *string)
 {
+	/* Initialize a counter variable 'num' to 0. */
 	int num = 0;
 
 	/* Use a 'for' loop to iterate through the characters in the */
 	/* string until a null-terminating character ('\0') is encountered. */
-	for (; s[num] != '\0'; num++)
+	for (; string[num] != '\0'; num++)
 	{
 		/* Call the '_putchar' function to print the */
 		/* current character in the string. */
-		_putchar(s[num]);
+		_putchar(string[num]);
 	}
 
 	/* After printing the string, add a new line  */

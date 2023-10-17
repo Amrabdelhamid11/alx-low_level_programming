@@ -5,9 +5,9 @@
  * print_rev - Write a function that prints
  * a string, in reverse, followed by a new line.
  * @string: The input string to be printed in reverse.
+ * --------------------------
  * Write a function that prints
  * a string, in reverse, followed by a new line.
-
  */
 void print_rev(char *string)
 {
