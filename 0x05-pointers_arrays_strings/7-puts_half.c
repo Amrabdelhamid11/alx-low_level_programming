@@ -31,7 +31,8 @@ void puts_half(char *string)
  * This function does not return a value (void).
  * @string: The given string
  * Return: The length of the string as an integer.
- * Write a function that returns the length of a string. */
+ * Write a function that returns the length of a string.
+ */
 int _strlen(char *string)
 {
 	/* Initialize a variable 'length' to store the  */
