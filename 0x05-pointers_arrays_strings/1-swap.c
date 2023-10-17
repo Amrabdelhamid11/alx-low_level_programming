@@ -2,18 +2,18 @@
 #include <stdio.h>
 
 /**
- * swap_int - swap integers value
+ *swap_int - swap integers value
  *
- * @a :first parameter
+ *@a:first parameter
  *
- * @b: second parameter 
+ *@b:second parameter
  *
- * return: nothing
+ *return:nothing
 */
 int void swap_int(int *a, int *b);
 {
 	int temp;
-       	temp= *a;
-	*a  = *b ;
+	temp = *a;
+	*a = *b ;
 	*b = temp;
 }
