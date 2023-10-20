@@ -22,7 +22,13 @@ void puts2(char *string);
 void puts_half(char *string);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
-
+char *string_toupper(char *characters);
+char *cap_string(char *string);
+char *leet(char *str);
+char *rot13(char *);
+void print_number(int n);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+void print_buffer(char *b, int size);
 
 
 
