@@ -12,8 +12,8 @@
  *
  * The leet dictionary consists of characters to be replaced, and the leet
  * encoding contains the replacement characters.
-
  * Return: A pointer to the modified string.
+ * By Youssef Hassane
  */
 
 char *leet(char *string)
