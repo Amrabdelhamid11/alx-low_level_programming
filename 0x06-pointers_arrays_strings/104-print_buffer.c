@@ -2,45 +2,49 @@
 #include <stdio.h>
 
 /**
- * print_number - Write a function that prints an integer.
- * @number: The array of characters to be modified.
- * Prototype: void print_number(int n);
- * You can only use _putchar function to print
- * You are not allowed to use long
- * You are not allowed to use arrays or pointers
- * You are not allowed to hard-code special valuesvoid print_buffer(char *b, int size) {
-**/
-if (size <= 0) {
-    printf("\n");
-    return;
-  }
+ * print_buffer - Write a function that prints a buffer.
+ * Prototype: void print_buffer(char *b, int size);
+ * @b: The buffer to print.
+ * @size: The size of the buffer in bytes.
+ */
 
-  int position = 0;
-  while (size > 0) {
-    printf("%08x ", position);
+void print_buffer(char *b, int size)
+{
+	int offset, i, j;
 
-    for (int i = 0; i < 10 && size > 0; i++) {
-      printf("%02x ", (unsigned char)*b);
-      b++;
-      size--;
-    }
+	offset = 0;
 
-    for (int i = 0; i < 10 - size; i++) {
-      printf("   ");
-    }
+	if (size <= 0)
+	{
+		printf("\n");
+		return;
+	}
+	while (offset < size)
+	{
+		i = size - offset < 10 ? size - offset : 10;
+		printf("%08x: ", offset);
+		for (j = 0; j < 10; j++)
+		{
+			if (j < i)
+				printf("%02x", *(b + offset + j));
+			else
+				printf("  ");
+			if (j % 2)
+			{
+				printf(" ");
+			}
+		}
+		for (j = 0; j < i; j++)
+		{
+			int c = *(b + offset + j);
 
-    for (int i = 0; i < 10 && position < position + size; i++) {
-      char c = (char)*b;
-      if (isprint(c)) {
-        printf("%c", c);
-      } else {
-        printf(".");
-      }
-      b++;
-    }
-
-    printf("\n");
-    position += 10;
-  }
+			if (c < 32 || c > 132)
+			{
+				c = '.';
+			}
+			printf("%c", c);
+		}
+		printf("\n");
+		offset += 10;
+	}
 }
-
