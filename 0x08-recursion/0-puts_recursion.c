@@ -15,17 +15,14 @@
 
 void _puts_recursion(char *string)
 {
-	/* if string isn't null, return */
-	if (*string)
-	{
-		/* print the string */
-		_putchar(*string);
-		/* call the function again with the rest of the string */
-		_puts_recursion(string + 1);
-	}
-	/* if string is null, print a new line */
-	if (*string == '\0')
+	if (*string == ('/0')
 	{
 		_putchar('\n');
 	}
+	else
+	{
+		_putchar(*string);
+		_puts_recursion(string + 1);
+	}
 }
+
