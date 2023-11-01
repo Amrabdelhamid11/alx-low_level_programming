@@ -13,7 +13,7 @@
  */
 void _puts_recursion(char *s)
 {
-    if (*s == '\0') {  // Corrected the parenthesis here
+    if (*s == '\0') {
         _putchar('\n');
     }
     else {
