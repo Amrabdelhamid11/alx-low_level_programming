@@ -13,7 +13,7 @@
  * --------------------------
  */
 
-void _puts_rev_recursion(char *string)
+void _print_rev_recursion(char *string)
 {
         if (*string == '\0')
         {
@@ -21,7 +21,7 @@ void _puts_rev_recursion(char *string)
         }
         else
         {
-                _puts_rev_recursion(string + 1);
+                _print_rev_recursion(string + 1);
 		_putchar(*string);
 	}
 }
