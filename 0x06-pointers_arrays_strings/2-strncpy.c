@@ -2,35 +2,42 @@
 #include <stdio.h>
 
 /**
- * _strlen - Write a function that returns the length of a string.
- * the values of two integers.
- * This function does not return a value (void).
- * @string: The given string
- * Return: The length of the string as an integer.
- * --------------------------
- * Write a function that returns the length of a string.
+ * _strncpy - Write a function that copies a string.
+ * Prototype: char *_strncpy(char *dest, char *src, int n);
+ * Your function should work exactly like strncpy
+ * Returns a pointer to the resulting string destination
+ * @destination: It is the destination string where
+ * the characters from source will be added
+ * @source: The characters from source are copied to
+ * the end of the destination string.
+ * @n: src does not need to be null-terminated if it contains n or more bytes
+ * Return: the starting address of the concatenated string
  */
 
-int _strlen(char *string)
+char *_strncpy(char *destination, const char *source, int n)
 {
-	/* Initialize a variable 'length' to store the  */
-	/* length of the string, starting from 0. */
-	int length = 0;
-	/**
-	 * Utilizing a while loop to iterate through the characters of the string.
-	 * while (*string): This is a while loop that continues as
-	 * long as the character pointed to by s is not the null
-	 * terminator ('\0'). The null terminator marks the end of
-	 * a C string, so this loop will continue until the end
-	 * of the string is reached.
-	 */
-	while (*string)
+	/* Storing the starting address of 'destination' in 'output' */
+	char *output = destination;
+	int num = 0;
+
+	for (; num < n; num++)
 	{
-		/* For each character, increment the 'length' variable. */
-		length++;
-		/* Move the 'string' pointer to the next character in the string. */
-		string++;
+		/* Copying each character from 'source' to 'destination' at position 'num' */
+		destination[num] = source[num];
+
+		/* If the end of 'source' is reached, */
+		/* fill the remaining 'destination' with (\0) */
+		if (source[num] == '\0')
+		{
+			while (num < n)
+			{
+				destination[num] = '\0';
+				num++;
+			}
+			/* break from the for loop */
+			break;
+		}
 	}
-	/* Return the final length of the string. */
-	return (length);
+	/* Return the starting address of 'destination' */
+	return (output);
 }
