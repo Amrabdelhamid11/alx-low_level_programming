@@ -15,9 +15,9 @@
 
 void _print_rev_recursion(char *string)
 {
-        if (*string > '\0')
-        {
-                _print_rev_recursion(string + 1);
-		_putchar(*string);
+if (*string > '\0')
+	{
+	_print_rev_recursion(string + 1);
+	_putchar(*string);
 	}
 }
