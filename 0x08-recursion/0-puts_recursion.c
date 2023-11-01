@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  * --------------------------
  * Prototype: void _puts_recursion(char *s);
- * @string: The string to be printed
+ * @s: The string to be printed
  * FYI: The standard library provides a similar
  * function: puts. Run man puts to learn more.
  * --------------------------
@@ -23,4 +23,3 @@ void _puts_recursion(char *s)
 		_puts_recursion(s + 1);
 	}
 }
-
